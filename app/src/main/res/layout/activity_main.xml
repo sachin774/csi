@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.sachin.csi.MainActivity">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:src="@drawable/ui"
+            android:layout_height="120dp" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+
+        android:layout_width="match_parent"
+        app:cardElevation="8dp"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="340dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="10dp"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Login"
+                    android:id="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                </TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email_login_name"
+                    android:ems="10"
+                    android:id="@+id/emailidET"
+                    android:layout_marginTop="5dp"
+                    android:capitalize="words" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:ems="10"
+                    android:id="@+id/passwordET"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/password_login_name"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:layout_below="@id/passwordET"
+                    android:layout_width="140dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_button"
+                    android:text="Sign In!"
+                    android:id="@+id/signinBTN"
+                    android:fontFamily="cursive"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/signinBTN"
+                    android:layout_width="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Or"
+                    android:layout_gravity="center"
+                    android:id="@+id/orTV"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/orTV"
+                    android:layout_width="140dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+
+                    android:background="@drawable/rounded_button"
+                    android:text="Sign UP!"
+                    android:fontFamily="cursive"
+
+                    android:id="@+id/signupBTN"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
